@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0 auto;
+            max-width: 500px;
+        }
+
+        header {
+            background-color: #f1f1f1;
+            padding: 8px;
+        }
+
+        main {
+            padding: 8px;
+        }
+
+        div {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        section {
+            padding: 8px;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 18px;
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        textarea {
+            display: block;
+            width: 100%;
+            min-height: 100px;
+            resize: none;
+            border: 2px solid #101010;
+            padding: 8px;
+        }
+
+        .btns {
+            display: flex;
+            gap: 8px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            background-color: #101010;
+            color: #f1f1f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>BRIEFING</h1>
+            <span>Grupo The Batman</span>
+            <p id="data"></p>
+        </div>
+
+        <section>
+            <ul>
+                <h3>Integrantes</h3>
+
+                <p>Alex - <i>Batman de Frank Miller(1980)</i></p>
+                <p>Marcos - <i>Lego Batman</i></p>
+                <p>Pedro - <i>Batman “do Queixão"</i></p>
+                <p>Sávio - <i>O cavaleiro das Trevas</i></p>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        <form action="" method="get" id="projectForm">
+            <label>Qual o nome da empresa?
+                <textarea type="text" name="1" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Endereço e contato:
+                <textarea type="text" name="2" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Me fale sobre a empresa, do que se trata, qual serviço ou produto oferecido? E qual é o seu “carro
+                chefe”?
+                <textarea type="text" name="3" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Qual o ramo de atuação, quanto tempo no mercado?
+                <textarea type="text" name="4" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Qual o objetivo da empresa ao criar o web site?
+                <textarea type="text" name="5" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Qual o nivel de controle que deseja sobre o site(mais automatizado ou manual), em qual área?
+                <textarea type="text" name="6" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>O site já possui dominio, se não, possui alguma preferência?
+                <textarea type="text" name="7" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Como a empresa imagina o futuro do site?
+                <textarea type="text" name="8" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Quais as principais metas que pretende alcançar com o site?
+                <textarea type="text" name="9" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Quem é o público-alvo? (Idade, gênero, localização, interesses, comportamentos)
+                <textarea type="text" name="10" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>A empresa já possui alguma identidade visual?
+                <textarea type="text" name="11" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>A empresa tem concorrentes diretos?
+                <textarea type="text" name="12" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Há alguma análise SWOT disponível (forças, fraquezas, oportunidades, ameaças)?
+                <textarea type="text" name="13" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Quais sites você possui como referência? Existe algum trabalho ou pesquisa prévia
+                relevante?
+                <textarea type="text" name="14" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Quais as ferramentas de marketing a empresa ultiliza?
+                <textarea type="text" name="15" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Qual é o contexto do projeto? (Histórico, motivo, necessidade)
+                <textarea type="text" name="16" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Como você mediria o processo do projeto?
+                <textarea type="text" name="17" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Qual seu nivel de preocupação com relação ao site?
+                <textarea type="text" name="18" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Existem permissões ou aprovações regulatórias necessárias?
+                <textarea type="text" name="19" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Como será feita a comunicação ao longo do projeto?
+                <textarea type="text" name="20" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Qual o orçamento para o projeto? Quais recursos estão disponíveis?
+                <textarea type="text" name="21" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Quantos funcionários? A empresa possui outros sócios? Quem toma as decisões?
+                <textarea type="text" name="22" placeholder="Resposta"></textarea>
+            </label>
+
+            <label>Qual é a data de início e o prazo final do projeto?
+                <textarea type="text" name="23" placeholder="Resposta"></textarea>
+            </label>
+
+            <div class="btns">
+                <button class="save" onclick="salvarDados()">Salvar</button>
+                <button class="print">Imprimir</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script>
+    let data = document.getElementById('data');
+    data.innerHTML = new Date().toLocaleDateString();
+
+    var button = document.querySelector('.print');
+    button.addEventListener('click', function () {
+        print();
+    });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const storageKey = 'projectFormData';
+        const form = document.getElementById('projectForm');
+
+        function carregarDados() {
+            let storage = JSON.parse(localStorage.getItem(storageKey)) || {};
+
+            for (const [key, value] of Object.entries(storage)) {
+                const field = form.querySelector(`[name="${key}"]`);
+                if (field) {
+                    field.value = value;
+                };
+            };
+        };
+
+        window.salvarDados = function () {
+            let storage = {};
+
+            const fields = form.querySelectorAll('textarea');
+            fields.forEach(field => {
+                storage[field.name] = field.value;
+            });
+
+            localStorage.setItem(storageKey, JSON.stringify(storage));
+            alert('Dados salvos com sucesso!');
+        };
+
+        carregarDados();
+    });
+
+</script>
+
+</html>
